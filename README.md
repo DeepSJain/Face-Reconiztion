@@ -4,6 +4,7 @@
 
 Useage
 ------
-1) First Generate Data.
+1) First Generate Data/Faces using "generate data.py".
 2) Open main and change variables as nessesory.
 3) Run main.py.
+4) Unknown faces will be saved and can be accesed/fixed by using "fix unknown.py".
