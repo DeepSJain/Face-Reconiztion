@@ -2,7 +2,7 @@
 
 - Detects and Reconizes faces/people using the web cam and learns more about the face while Reconizing.
 
-Useage
+Usage
 ------
 1) First Generate Data/Faces using "generate data.py".
 2) Open main and change variables as nessesory.
