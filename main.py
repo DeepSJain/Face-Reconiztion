@@ -80,7 +80,7 @@ def new_recognizer(training_data,data_store):
         try:
             recognizer.train(faces, np.array(labels))
         except:
-            print("Error Training Model")
+            print("Error Training Model. Posibble because of no data.")
             raise SystemExit
         recognizer.write(data_store)
         open(folder+"/files", "w").write(str(files))
@@ -127,6 +127,9 @@ exit = " " #Exit Charecter
 #----------------------------------------------------------------#
 #Main
 #----------------------------------------------------------------#
+if(not os.path.isdir(training_data)):
+    os.mkdir(training_data)
+
 recognizer = new_recognizer(training_data,data_store)
 
 video_capture = cv2.VideoCapture(0)
